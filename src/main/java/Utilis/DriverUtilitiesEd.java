@@ -21,7 +21,7 @@ public class DriverUtilitiesEd {
 
         }
 
-        DriverFactory.driver.navigate().to(prop.getProperty("url"));
+        DriverFactoryEd.driver.navigate().to(prop.getProperty("url"));
     }
     public void navigateTOUrl1()  {
 

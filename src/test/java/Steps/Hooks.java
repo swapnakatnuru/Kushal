@@ -2,6 +2,7 @@ package Steps;
 
 ///import Utilis.DriverFactory;
 import Utilis.DriverFactory;
+import Utilis.DriverFactoryEd;
 import io.cucumber.java.*;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -16,7 +17,9 @@ import java.util.Properties;
 public class Hooks {
 @Before
     public void setUp()  {
-        DriverFactory.getDriverChrome();}
+        DriverFactory.getDriverChrome();
+    DriverFactoryEd.getDriverEdge();
+ }
     @After
     public void tearD0wn(Scenario scenario) {
         if (scenario.isFailed()) {

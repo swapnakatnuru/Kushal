@@ -4,16 +4,16 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 public class DriverUtilitiesEd {
-    public static Properties prop;
+    public static Properties prop1;
 
 
 
     public void navigateTOUrl()  {
 
-        prop = new Properties();
+        prop1 = new Properties();
         try {
             FileInputStream fs = new FileInputStream("src/test/resources/dataEd.properties");
-            prop.load(fs);
+            prop1.load(fs);
 
 
         } catch (Exception e) {
@@ -21,14 +21,14 @@ public class DriverUtilitiesEd {
 
         }
 
-        DriverFactory.driver.navigate().to(prop.getProperty("url"));
+        DriverFactory.driver.navigate().to(prop1.getProperty("url"));
     }
     public void navigateTOUrl1()  {
 
-        prop = new Properties();
+        prop1 = new Properties();
         try {
             FileInputStream fs = new FileInputStream("src/test/resources/dataEd.properties");
-            prop.load(fs);
+            prop1.load(fs);
 
 
         } catch (Exception e) {
@@ -36,7 +36,7 @@ public class DriverUtilitiesEd {
 
         }
 
-        DriverFactoryEd.driver.navigate().to(prop.getProperty("url1"));
+        DriverFactoryEd.driver.navigate().to(prop1.getProperty("url1"));
     }
     public String getPageTielEd(){
         return  DriverFactoryEd.driver.getTitle();

@@ -10,7 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 
 public class EdHooks {
     @Before
-    public void setUpEd()  {
+    public void setup()  {
         DriverFactoryEd.getDriverEdge();}
 
     @After

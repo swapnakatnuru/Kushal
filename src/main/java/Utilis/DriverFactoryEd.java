@@ -9,7 +9,7 @@ import java.util.Properties;
 
 public class DriverFactoryEd {
     public static WebDriver driver;
-    public static Properties prop;
+    public static Properties prop1;
 
     public static WebDriver getDriverEdge() {
         WebDriverManager.edgedriver().setup();

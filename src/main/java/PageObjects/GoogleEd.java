@@ -9,7 +9,7 @@ import java.util.Properties;
 
 public class GoogleEd {
     WebDriver driver;
-public static Properties prop;
+public static Properties prop1;
  public  GoogleEd(WebDriver driver) {
      this.driver = driver;
      PageFactory.initElements(driver, this);
@@ -17,7 +17,7 @@ public static Properties prop;
  }
   public void enterUrl() throws InterruptedException {
          Thread.sleep(9000);
-        DriverFactory.driver.navigate().to(prop.getProperty("url1"));
+        DriverFactoryEd.driver.navigate().to(prop1.getProperty("url1"));
      }
 
 

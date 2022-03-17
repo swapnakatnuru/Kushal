@@ -17,11 +17,13 @@ import java.util.List;
 import java.util.Map;
 
 public class StepDefinitions {
-    @Given("I  navigate to  url")
-    public void i_navigate_to_url() {
-        BasePage.driverUtilities.navigateTOUrl();
-    }
+    @Given("I open browser and I  navigate to  url")
+    public void i_open_browser_and_i_navigate_to_url() throws Exception {
 
+        //BasePage.driverUtilities.openBrowser();
+        BasePage.driverUtilities.navigateTOUrl();
+
+    }
 
 
     @Then("I should be able to navigate to HomePage")

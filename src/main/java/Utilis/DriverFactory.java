@@ -10,6 +10,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -18,21 +20,29 @@ import java.util.Properties;
 public class DriverFactory {
     public static WebDriver driver;
     public static Properties prop;
-    public static WebDriver getDriver()
-    {
+
+    public static WebDriver getDriverChrome() {
+
         WebDriverManager.chromedriver().setup();
-        driver=new ChromeDriver();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         BasePage.initPages();
+        return driver;
+    }
 
-          return driver;
+    public static WebDriver getDriverEdge() {
+        WebDriverManager.edgedriver();
+        driver= new EdgeDriver();
+        driver.manage().window().maximize();
+        BasePage.initPages();
+return  driver;
     }
 
 
-    public static void closeDriver(){
-        System.out.println(driver.getWindowHandles());
 
-             driver.quit();
+
+    public static void closeDriver() {
+               driver.quit();
     }
 
 }

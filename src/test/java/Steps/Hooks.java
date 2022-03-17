@@ -1,5 +1,6 @@
 package Steps;
 
+///import Utilis.DriverFactory;
 import Utilis.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -12,19 +13,20 @@ import java.util.Properties;
 
 public class Hooks {
     @Before
-     public void setUp() {
-        DriverFactory.getDriver();
-     }
+    public void setUp()  {
+        DriverFactory.getDriverChrome();
+
+        DriverFactory.getDriverEdge();
+    }
     @After
-      public void tearD0wn(Scenario scenario){
-             if(scenario.isFailed()){
-                 final  byte[] screenshot=((TakesScreenshot)DriverFactory.driver).getScreenshotAs(OutputType.BYTES);
-                 scenario.attach(screenshot,"image/png","screenshot");
+    public void tearD0wn(Scenario scenario) {
+        if (scenario.isFailed()) {
+            final byte[] screenshot = ((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshot, "image/png", "screenshot");
+        }
 
-             }
-
-         DriverFactory.closeDriver();
-         }
-     }
+            DriverFactory.closeDriver();
+        }
+    }
 
 

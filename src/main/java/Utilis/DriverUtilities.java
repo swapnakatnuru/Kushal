@@ -11,7 +11,9 @@ import java.util.Properties;
 public class DriverUtilities {
     public static Properties prop;
 
-    public void navigateTOUrl() {
+
+
+    public void navigateTOUrl()  {
 
         prop = new Properties();
         try {
@@ -23,6 +25,7 @@ public class DriverUtilities {
             e.printStackTrace();
 
         }
+
         DriverFactory.driver.navigate().to(prop.getProperty("url"));
     }
 

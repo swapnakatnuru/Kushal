@@ -19,7 +19,8 @@ public class DriverFactoryEd {
         return  driver;
 
     }
-    public static void closeDriver() {
+    public static void closeDriver()
+     {
         driver.quit();
     }
 

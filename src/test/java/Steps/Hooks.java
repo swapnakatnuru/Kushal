@@ -28,6 +28,7 @@ public class Hooks {
         }
 
             DriverFactory.closeDriver();
+           DriverFactoryEd.closeDriver();
         }
     }
 

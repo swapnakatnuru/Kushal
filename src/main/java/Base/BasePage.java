@@ -6,6 +6,7 @@ import PageObjects.HomePage;
 import Utilis.DriverFactory;
 import Utilis.DriverFactoryEd;
 import Utilis.DriverUtilities;
+import Utilis.DriverUtilitiesEd;
 
 import java.util.Properties;
 
@@ -14,6 +15,7 @@ public class BasePage {
     public static GiftCardsPage giftCardsPage;
     public static DriverUtilities driverUtilities;
     public static GoogleEd googleEd;
+    public static DriverUtilitiesEd driverUtilitiesEd;
 
 
     public static void initPages() {
@@ -21,6 +23,7 @@ public class BasePage {
         giftCardsPage=new GiftCardsPage(DriverFactory.driver);
         driverUtilities=new DriverUtilities();
         googleEd=new GoogleEd(DriverFactoryEd.driver);
+        driverUtilitiesEd= new DriverUtilitiesEd();
 
 
     }

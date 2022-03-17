@@ -16,7 +16,7 @@ public static Properties prop;
 
  }
   public void enterUrl() throws InterruptedException {
-         Thread.sleep(5000);
+         Thread.sleep(9000);
         DriverFactory.driver.navigate().to(prop.getProperty("url1"));
      }
 

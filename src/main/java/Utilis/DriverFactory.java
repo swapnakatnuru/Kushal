@@ -31,13 +31,6 @@ public class DriverFactory {
         return driver;
     }
 
-    public static WebDriver getDriverEdge() {
-        WebDriverManager.edgedriver();
-        driver= new EdgeDriver();
-        driver.manage().window().maximize();
-        BasePage.initPages();
-        return  driver;
-    }
 
 
 

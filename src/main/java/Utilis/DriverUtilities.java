@@ -28,6 +28,21 @@ public class DriverUtilities {
 
         DriverFactory.driver.navigate().to(prop.getProperty("url"));
     }
+    public void navigateTOUrl1()  {
+
+        prop = new Properties();
+        try {
+            FileInputStream fs = new FileInputStream("src/test/resources/data.properties");
+            prop.load(fs);
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
+
+        DriverFactoryEd.driver.navigate().to(prop.getProperty("url1"));
+    }
 
     public void firstNameTxt() {
         DriverFactory.driver.navigate().to(prop.getProperty("FirstName"));

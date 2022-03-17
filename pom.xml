@@ -32,18 +32,13 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.0.0-M5</version>
                     <configuration>
-                        <parallel>all</parallel>
-                        <forkMode>perthread</forkMode>
+                        <parallel>classes</parallel>
                         <perCoreThreadCount>true</perCoreThreadCount>
+
+
                         <threadCount>2</threadCount>
                         <redirectTestOutputToFile>false</redirectTestOutputToFile>
-                        <properties>
-                            <configurationParameters>
-                                junit.jupiter.execution.parallel.enabled=true
-                                junit.jupiter.execution.parallel.mode.default=same_thread
-                                junit.jupiter.execution.parallel.mode.classes.default=concurrent
-                            </configurationParameters>
-                        </properties>
+
 
                         <includes>**/*Runner.java</includes>
                     </configuration>

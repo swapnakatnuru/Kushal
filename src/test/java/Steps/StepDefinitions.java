@@ -2,6 +2,7 @@ package Steps;
 
 import Base.BasePage;
 import Utilis.DriverFactory;
+import Utilis.DriverFactoryEd;
 import Utilis.DriverUtilities;
 //import Utilis.ReadTestData;
 import io.cucumber.datatable.DataTable;
@@ -87,6 +88,16 @@ public class StepDefinitions {
             BasePage.driverUtilities.pageRefresh();
             // BasePage.giftCardsPage.clickRegisterLink();
 
-
         }
-    }}
+        }
+        @Given(": I should enter the url1")
+        public void i_should_enter_the_url1() {
+            DriverFactoryEd.getDriverEdge();
+        }
+
+        @Then(": I should navigate to the page")
+        public void i_should_navigate_to_the_page() {
+            // Write code here that turns the phrase above into concrete actions
+            throw new io.cucumber.java.PendingException();
+        }
+    }

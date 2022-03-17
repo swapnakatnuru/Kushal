@@ -30,7 +30,7 @@ public class DriverUtilities {
     }
     public void navigateTOUrl1()  {
 
-        prop1 = new Properties();
+        prop = new Properties();
         try {
             FileInputStream fs = new FileInputStream("src/test/resources/data.properties");
             prop.load(fs);

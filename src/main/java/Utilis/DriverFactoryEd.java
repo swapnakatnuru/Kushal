@@ -12,7 +12,7 @@ public class DriverFactoryEd {
     public static Properties prop;
 
     public static WebDriver getDriverEdge() {
-        WebDriverManager.edgedriver();
+        WebDriverManager.edgedriver().setup();
         driver= new EdgeDriver();
         driver.manage().window().maximize();
         BasePage.initPages();

@@ -20,7 +20,7 @@ public class EdHooks {
             scenario.attach(screenshot, "image/png", "screenshot");
         }
 
-        DriverFactory.closeDriver();
+        DriverFactoryEd.closeDriver();
     }
 }
 

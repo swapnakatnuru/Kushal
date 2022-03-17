@@ -21,6 +21,7 @@ public class DriverFactory {
     public static WebDriver driver;
     public static Properties prop;
 
+
     public static WebDriver getDriverChrome() {
 
         WebDriverManager.chromedriver().setup();
@@ -35,7 +36,7 @@ public class DriverFactory {
         driver= new EdgeDriver();
         driver.manage().window().maximize();
         BasePage.initPages();
-return  driver;
+        return  driver;
     }
 
 

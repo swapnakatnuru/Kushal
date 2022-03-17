@@ -13,12 +13,9 @@ import java.util.Properties;
 
 public class Hooks {
     @Before
-    public void setUpChrome()  {
+    public void setUp()  {
         DriverFactory.getDriverChrome();}
-    public void setUp(){
 
-        DriverFactory.getDriverEdge();
-    }
     @After
     public void tearD0wn(Scenario scenario) {
         if (scenario.isFailed()) {

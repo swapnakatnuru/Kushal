@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/test/resources/Features/Payment.feature"},
         glue={"EdHooks","StepDefinitionEd"},
-        plugin = {"pretty","html:target/cucumber.html"}
-        //tags = "@Parameter"
+        plugin = {"pretty","html:target/cucumber.html"},
+        tags = "@ui"
 
 )
 

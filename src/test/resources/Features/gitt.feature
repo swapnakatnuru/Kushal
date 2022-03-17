@@ -9,7 +9,7 @@ Scenario: clicking on giftcadlink
  Then   I should be able to navigate to HomePage
  When   I click on Gift Cards link
  Then   I should be able to navigate to the GiftCardsPage
-   @ui
+   @ui @Chrome
  Scenario: verify user registration by clicking on registerlink on giftcards page
     When I click on Register link on Gift Cards Page
     And  I should be able to select a female button in gender

@@ -69,7 +69,9 @@ public class DriverUtilities {
 
         return str;
     }*/
-
+public String getPageTielEd(){
+    return  DriverFactoryEd.driver.getTitle();
+}
 
         public String getPageTitle() {
             return DriverFactory.driver.getTitle();

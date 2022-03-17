@@ -92,7 +92,7 @@ public class StepDefinitions {
         @Given("I should enter the url1")
         public void i_should_enter_the_url1() throws InterruptedException {
         //Thread.sleep(5000);
-        BasePage.googleEd.enterUrl();
+        BasePage.driverUtilitiesEd.navigateTOUrl1();
 
         }
         @Then("I should navigate to the page")

@@ -15,11 +15,7 @@ public class Hooks {
 
              DriverFactory.getDriverChrome();
     }
-   @Before
-  public void setupEdge(){
 
-        DriverFactory.getDriverEdge();
- }
 @After
     public void tearD0wn(Scenario scenario) {
         if (scenario.isFailed()) {

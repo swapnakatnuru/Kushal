@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src/test/resources/Features"},
-        glue={"Steps"},
+        features = {"src/test/resources/Features/gitt.feature"},
+        glue={"EdgeHooks", "StepDefinitions"},
         plugin = {"pretty","html:target/cucumber.html"}
         //tags = "@Parameter"
 )

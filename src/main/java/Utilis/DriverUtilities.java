@@ -41,7 +41,7 @@ public class DriverUtilities {
 
         }
 
-        DriverFactoryEd.driver.navigate().to(prop.getProperty("url1"));
+       DriverFactory.driver.navigate().to(prop.getProperty("url1"));
     }
 
     public void firstNameTxt() {

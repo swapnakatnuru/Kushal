@@ -1,7 +1,5 @@
 package PageObjects;
 
-import Utilis.DriverFactory;
-import Utilis.DriverFactoryEd;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -16,8 +14,8 @@ public static Properties prop1;
 
  }
   public void enterUrl() throws InterruptedException {
-         Thread.sleep(9000);
-        DriverFactoryEd.driver.navigate().to(prop1.getProperty("url1"));
+         Thread.sleep(5000);
+      driver.navigate().to("www.google.com");
      }
 
 

@@ -28,15 +28,28 @@ public class DriverFactory {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         BasePage.initPages();
+      //  driver.quit();
         return driver;
+
+
     }
 
 
+    public static WebDriver getDriverEdge() {
+
+        WebDriverManager.edgedriver().setup();
+        driver = new EdgeDriver();
+        driver.manage().window().maximize();
+        BasePage.initPages();
+        //driver.quit();
+        return driver;
 
 
+    }
 
     public static void closeDriver() {
-               driver.quit();
-    }
+        driver.quit();
 
+
+    }
 }

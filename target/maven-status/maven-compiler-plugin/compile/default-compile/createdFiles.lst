@@ -1,8 +1,6 @@
-Utilis\DriverFactoryEd.class
+Utilis\DriverUtilities.class
 PageObjects\GiftCardsPage.class
 PageObjects\GoogleEd.class
 PageObjects\HomePage.class
 Utilis\DriverFactory.class
-Utilis\DriverUtilities.class
-Utilis\DriverUtilitiesEd.class
 Base\BasePage.class

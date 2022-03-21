@@ -1,19 +1,12 @@
 package Steps;
 
 import Base.BasePage;
-import Utilis.DriverFactory;
-import Utilis.DriverFactoryEd;
-import Utilis.DriverUtilities;
 //import Utilis.ReadTestData;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.messages.Messages;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -92,12 +85,13 @@ public class StepDefinitions {
         @Given("I should enter the url1")
         public void i_should_enter_the_url1() throws InterruptedException {
         //Thread.sleep(5000);
-        BasePage.driverUtilitiesEd.navigateTOUrl1();
+        //BasePage.driverUtilities.navigateTOUrl1();
+            BasePage.googleEd.enterUrl();
 
         }
         @Then("I should navigate to the page")
         public void i_should_navigate_to_the_page() {
-        BasePage.driverUtilitiesEd.getPageTielEd();
+        BasePage.driverUtilities.getPageTitle();
 
         }
 
